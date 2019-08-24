@@ -12,7 +12,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.*;
 
-public class TestCenter {
+public class TestCommonMethod {
     private ApplicationContext context =
             new ClassPathXmlApplicationContext("applicationContext.xml");
     

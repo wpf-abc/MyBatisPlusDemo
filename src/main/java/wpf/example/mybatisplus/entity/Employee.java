@@ -3,6 +3,7 @@ package wpf.example.mybatisplus.entity;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
+import com.baomidou.mybatisplus.annotations.Version;
 import com.baomidou.mybatisplus.enums.IdType;
 import lombok.Data;
 
@@ -31,6 +32,9 @@ public class Employee {
     private String  email ;
     private Integer gender;
     private Integer age ;
+    @Version
+    @TableField(value = "data_version")
+    private Integer dataVersion;
 
     @TableField(exist = false)
     private Double salary ;
